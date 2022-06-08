@@ -1,11 +1,9 @@
 import React from 'react'
 
-// import { Container } from './styles';
-
 function Footer() {
     return (
-        <div className="bg-[#FAFAFA] items-center justify-center">
-            <p>Made By Alexandre Noguêz</p>
+        <div className="bg-blue-300 p-1 items-center text-center">
+            <p>Made By Alexandre Noguez</p>
         </div>
     )
 }
