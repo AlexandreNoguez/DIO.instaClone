@@ -2,10 +2,12 @@ import React from 'react'
 import instaImg from '../../assets/img/insta.png'
 import { Link } from 'react-router-dom'
 import { FaFacebookSquare } from 'react-icons/fa'
+import googlePlay from '../../assets/img/android.png'
+import iphoneStore from '../../assets/img/ios.png'
 function Login() {
     return (
-        <div>
-            <div className="w-[350px] h-[420px] p-8 border-[1px] rounded-sm bg-white items-center flex flex-col mr-36">
+        <div className="mr-36 md:mr-0">
+            <div className="w-[350px] h-[420px] p-8 border-[1px] rounded-sm bg-white items-center flex flex-col">
                 <img className="mx-auto my-6" src={instaImg} />
                 <input
                     className="w-64 h-9 p-4 border-[1px] border-gray-300 focus:outline-slate-200 rounded-sm mb-2"
@@ -33,13 +35,25 @@ function Login() {
                     <p className="mx-2 my-4 ">Iniciar sessão com Facebook</p>
                 </div>
                 <div>
-                    <p className="text-sm my-4">Esqueci minha senha!</p>
+                    <p className="text-sm my-4">
+                        <Link to="/relembre">Esqueci minha senha!</Link>
+                    </p>
                 </div>
             </div>
-            <div className="w-[350px] bg-white my-2 border-[1px] border-[#dbdbdb] p-4 items-center justify-center ">
+            <div className="w-[350px] bg-white my-2 border-[1px] border-[#dbdbdb] p-4 items-center text-center ">
                 <p>
-                    Não ?<Link to="/cadastro">Faça a sua conta!</Link>
+                    Ainda não tem sua conta?
+                    <Link className="text-blue-600" to="/cadastro">
+                        Faça agora mesmo!
+                    </Link>
                 </p>
+            </div>
+            <div className="p-4 items-center justify-center text-center ">
+                <p>Baixe o app agora mesmo!</p>
+            </div>
+            <div className="w-[350px] my-2 items-center justify-center flex gap-2 ">
+                <img className="w-36 h-10" src={googlePlay} alt="" />
+                <img className="w-36 h-10" src={iphoneStore} alt="" />
             </div>
         </div>
     )

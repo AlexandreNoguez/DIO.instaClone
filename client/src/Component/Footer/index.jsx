@@ -4,8 +4,8 @@ import React from 'react'
 
 function Footer() {
     return (
-        <div className="bg-[#FAFAFA] items-center justify-center w-screen h-6">
-            <p>Made By Xandão</p>
+        <div className="bg-[#FAFAFA] items-center justify-center">
+            <p>Made By Alexandre Noguêz</p>
         </div>
     )
 }
