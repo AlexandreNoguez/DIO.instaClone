@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import instaImg from '../../assets/img/insta.png'
-import { Link } from 'react-router-dom'
-import { FaFacebookSquare } from 'react-icons/fa'
-import googlePlay from '../../assets/img/android.png'
 import iphoneStore from '../../assets/img/ios.png'
+import googlePlay from '../../assets/img/android.png'
+import { FaFacebookSquare } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 function Login() {
     const [getEmail, setGetEmail] = useState('')
     const [getPassword, setGetPassword] = useState('')

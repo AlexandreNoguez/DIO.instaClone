@@ -1,9 +1,7 @@
 import React from 'react'
-import PhoneIcons from '../../Component/PhoneIcons'
-import Login from '../../Component/LoginComponent'
 import Footer from '../../Component/Footer'
-
-// import { Container } from './styles';
+import Login from '../../Component/LoginComponent'
+import PhoneIcons from '../../Component/PhoneIcons'
 
 function LoginPage() {
     return (
